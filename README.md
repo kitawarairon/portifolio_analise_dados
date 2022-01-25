@@ -14,9 +14,9 @@ Neste repositório encontram-se alguns projetos de análise de dados. Onde cada 
  * `relatorio_nome.pdf` -> contém um relatório técnico da empresa *X* para entregar ao cliente;
  * `arquivo_dados` -> arquivos onde estão os dados que serão analisados.
 
+
 # Projetos disponíveis atualmente 12/01/2022
-* Projeto de evolução do custo do aço estrutural
-* Projeto da turbina eólica
-* Projeto de predição para imóveis do AIRBNB
-* Projeto de predição para consumo de cerveja em SP
+* Projeto de evolução do [custo do aço estrutural](https://github.com/kitawarairon/portifolio_analise_dados/tree/main/projeto_evolucao_do_custo_do_a%C3%A7o)
+* Projeto da [turbina eólica](https://github.com/kitawarairon/portifolio_analise_dados/tree/main/projeto_turbina_eolica)
+* Projeto da [produção do cimento](https://github.com/kitawarairon/portifolio_analise_dados/tree/main/projeto_cement_manufacturing)
 
