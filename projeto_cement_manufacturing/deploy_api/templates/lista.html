@@ -1,0 +1,88 @@
+{% extends "template.html"%}
+{% block conteudo %}
+
+<hr>
+<h2> Tabela de modelos e resultados </h2>
+<hr>
+
+    <table class="table table-striped table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cimento (kg/m³)</th>
+                <th>Escória (kg/m³)</th>
+                <th>Cinzas (kg/m³)</th>
+                <th>Água (kg/m³)</th>
+                <th>Super plastificante (kg/m³)</th>
+                <th>Agregado graúdo (kg/m³)</th>
+                <th>Agregado miúdo (kg/m³)</th>
+                <th>Idade (Dias)</th>
+                <th>Fck (MPa)</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for concreto in amostras %}
+
+                        <tr>
+                            <td>{{ concreto.nome }}</td>
+                            <td>{{ concreto.cimento }}</td>
+                            <td>{{ concreto.escoria }}</td>
+                            <td>{{ concreto.cinzas }}</td>
+                            <td>{{ concreto.agua }}</td>
+                            <td>{{ concreto.plast }}</td>
+                            <td>{{ concreto.graudo }}</td>
+                            <td>{{ concreto.miudo }}</td>
+                            <td>{{ concreto.idade }}</td>
+                            <td>{{ concreto.fck }}</td>
+                        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+<hr>
+<h2> Dados de entrada </h2>
+<hr>
+
+      <form action="/criar" method="post">
+        <fieldset>
+            <div class="form-group">
+            <label for="nome">Nome da amostra</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="cimento">Cimento</label>
+            <input type="text" id="cimento" name="cimento" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="escoria">Escória</label>
+            <input type="text" id="escoria" name="escoria" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="cinzas">Cinzas</label>
+            <input type="text" id="cinzas" name="cinzas" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="agua">Água</label>
+            <input type="text" id="agua" name="agua" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="plast">Super plastificante</label>
+            <input type="text" id="plast" name="plast" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="graudo">Agregado Gráudo</label>
+            <input type="text" id="graudo" name="graudo" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="miudo">Agregado Miúdo</label>
+            <input type="text" id="miudo" name="miudo" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="text" id="idade" name="idade" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Calcular</button>
+        </fieldset>
+      </form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cálculo da resistência do concreto à compressão</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+  </head>
+  <body>
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ titulo }}</h1>
+
+            <nav class="nav">
+  <a class="nav-link active" href="/">Inicial</a>
+  <a class="nav-link" href="/duvidas">Dúvidas</a>
+            </nav>
+
+
+        </div>
+        {% block conteudo %}{% endblock %}
+    </div>
+</body>
+</html>
