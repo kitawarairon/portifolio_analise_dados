@@ -22,8 +22,11 @@ Neste repositório encontram-se alguns projetos de análise de dados. Onde cada 
  > Neste projeto tem-se uma análise detalhada das features que influênciam na potência ativa e criação de modelos de regressão.
 * Projeto da [produção do cimento](https://github.com/kitawarairon/portifolio_analise_dados/tree/main/projeto_cement_manufacturing)
  > Neste projeto temos uma análise das features, criação de modelos de clusterização e intepretação dos dados e, por fim, criação de um modelo de regressão e o deploy com o framework flask.
-* Projeto da [análise de fraude](https://github.com/kitawarairon/portifolio_analise_dados/blob/main/projeto_creditcard/analise_fraude.ipynb)
-> Neste projeto realizamos uma análise de classificação com os algotitimos de árvore de decisão, floresta aleatória e alguns modeos ensamble. Além disso, foi criado metodologias para analisar os melhores modelos e otimização a partir da exploração dos atributos dos modelos.
+* Projeto da [análise de credit card](https://github.com/kitawarairon/portifolio_analise_dados/blob/main/projeto_creditcard/analise_fraude.ipynb)
+> Neste projeto realizamos uma análise de classificação com os algotitimos de árvore de decisão, floresta aleatória e alguns modeos ensamble em um dataset de fraudes de cartão de crédito. Além disso, foi criado metodologias para analisar os melhores modelos e otimização a partir da exploração dos atributos dos modelos.
+* Projeto do [insumos da construção civil](https://github.com/kitawarairon/portifolio_analise_dados/tree/main/projeto_insumos_construcao_civil)
+> Neste projeto realizou-se uma análise explolatória dos dados e criação de metodologias para uma análise individual do insumo.
+
 
 **OBS:** Em alguns modelos é está disponóvel também o projeto de deploy.
 
